@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Carlos Eduardo Fialho">
+    <meta name="keywords" content="html5, insignia">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
@@ -30,7 +32,7 @@
                 
               <h2 class="saibamais">Solicite mais informações</h2>
               <label for="nome">Nome</label> 
-              <input class="campo" placeholder="Digite seu nome e sobrenome" type="text" id="nome" name="nome" required>
+              <input class="campo" placeholder="Digite seu nome" type="text" id="nome" name="nome" required>
           
               <label for="telefone">Telefone</label>
               <input class="campo" placeholder="Digite seu telefone com +DDD" type="tel" id="telefone" name="telefone" required>
@@ -63,7 +65,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $telefone = $_POST["telefone"];
     $email = $_POST["email"];
 
-    $destino = "corretordeimoveisfialho@gmail.com"; // Substitua pelo seu endereço de e-mail
+    $destino = "corretordeimoveisfialho@gmail.com"; 
 
     $assunto = "Nova mensagem do formulário de contato";
 

@@ -1,16 +1,20 @@
+body{
+  overflow: none;
+}
+
 .hero-content{
     display:flex;
     flex-direction:column;
     align-items:center;
-    background-image:url("../imagem/insigniaFachada.jpeg");
+    background-image:url("../imagem/TEIXEIRA-DUARTE_INSIGNIA_FACHADA-02_HR-scaled.jpg");
     background-size:cover;
     background-repeat:no-repeat;
     background-position:center;
     color:#ffffff;
     text-align:center;
     padding:90px;
-    width: 85.5vw;
-    height: 1280px;
+    width: 86.6%;
+    height: auto;
   }
   
   .hero-content form{
@@ -125,63 +129,98 @@
       margin:0;
     }
 
-    @media only screen and (max-width:550px){
-      .hero-content{
-        position:relative;
-        width: 300px;
-        height: auto;
-      }
+@media only screen and (max-width: 600px) {
+  body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
 
-      .saibamais{
-        width: 375px;
-      }
+  .hero-content{
+    width: 63.1%;
+  }
 
-      .formulario{
-        width: 375px;
-      }
+  .hero-content form {
+    width: 100%;
+  }
 
-      .importante{
-        width: 366px;
-      }
+  .hero-content .logo {
+    width: 80%;
+    height: auto;
+  }
 
-      form input, form select, form textarea{
-        margin-left: -15px;
-      }  
+  .importante {
+    width: 100%;
+    padding: 10px;
+  }
 
-      footer{
-        width: 478px;
-        height: auto;
-        margin: 0;
-      }
-    }
+  .obra {
+    font-size: 200%;
+  }
 
-    @media only screen and (max-width:428px){
-      .hero-content{
-        position:relative;
-        width: 200px;
-        height: auto;
-      }
+  .metragens {
+    font-size: 150%;
+  }
 
-      .saibamais{
-        width: 375px;
-      }
+  .informacoes {
+    padding: 5px;
+  }
 
-      .formulario{
-        width: 375px;
-      }
+  .formulario {
+    width: 100%;
+    box-shadow: none;
+  }
 
-      .importante{
-        width: 366px;
-      }
+  .saibamais {
+    width: 100%;
+  }
 
-      form input, form select, form textarea{
-        margin-left: -15px;
-      }  
+  label {
+    margin-right: 0;
+  }
 
-      footer{
-        width: 378px;
-        height: auto;
-        margin: 0;
-       
-      }
-    }
+  form input,
+  form select,
+  form textarea {
+    margin-left: 0;
+  }
+
+  footer {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 428px) {
+
+  body{
+   width: 100%;
+   height: auto;
+   position: relative;
+  }
+
+  .obra {
+    font-size: 150%;
+  }
+
+  .metragens {
+    font-size: 120%;
+  }
+
+  .whats {
+    position: fixed;
+    bottom: 15px;
+    right: 35px;
+    z-index: 9999;
+  }
+  
+  .whats img {
+    width: 60px;
+    height: auto;
+  }
+  footer {
+    width: 109%;
+  }
+  
+}
+
+/* Adicione um estilo para o botão de WhatsApp */
